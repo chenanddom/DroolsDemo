@@ -1,0 +1,12 @@
+package droolRule;
+import com.itdom.entity.User;
+import java.lang.String;
+import java.util.List;
+
+rule "demo4"
+    when
+        $list:List()
+        $user:User(name memberOf $list)
+    then
+        System.out.println("the user "+$user.getName() +" exist");
+end

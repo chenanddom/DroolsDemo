@@ -1,0 +1,11 @@
+package droolRule;
+import com.itdom.entity.User;
+import java.lang.String;
+import java.util.List;
+
+rule "demo5"
+    when
+        $u:User(name matches "zhang.*")
+    then
+        System.out.println("the user is "+$u.getName());
+end

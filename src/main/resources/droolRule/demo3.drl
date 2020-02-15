@@ -1,0 +1,12 @@
+package droolRule;
+import com.itdom.entity.User;
+import java.lang.String;
+import java.util.List;
+
+rule "demo3"
+    when
+        $s:String()
+        $user:User(name contains $s)
+    then
+        System.out.println("hello "+$user.getName());
+end
