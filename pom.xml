@@ -31,8 +31,6 @@
             <version>${spring-boot.version}</version>
         </dependency>
 
-
-
         <!--drools规则引擎-->
         <dependency>
             <groupId>org.drools</groupId>
@@ -58,6 +56,13 @@
             <groupId>org.kie</groupId>
             <artifactId>kie-spring</artifactId>
             <version>7.6.0.Final</version>
+        </dependency>
+
+        <!-- https://mvnrepository.com/artifact/org.springframework.boot/spring-boot-starter-data-mongodb -->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-data-mongodb</artifactId>
+            <version>2.1.2.RELEASE</version>
         </dependency>
 
         <!--test 支持-->

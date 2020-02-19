@@ -1,0 +1,8 @@
+spring:
+  data:
+    mongodb:
+      host: 47.105.103.82
+      port: 38018
+      database: admin
+      password: root@123
+      username: chendom

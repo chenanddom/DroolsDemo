@@ -1,0 +1,13 @@
+package droolRule;
+import com.itdom.entity.Order
+import org.slf4j.Logger
+import org.slf4j.LoggerFactory;
+rule "order"
+salience 100
+when
+    $o:Order(orderAmount>100)
+then
+    $o.setOrderAmount($o.getOrderAmount()*0.85);
+    Logger logger = LoggerFactory.getLogger("orderRools");
+    logger.info("order amount is {}",$o.getOrderAmount());
+end
